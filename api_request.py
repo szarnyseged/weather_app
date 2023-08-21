@@ -3,20 +3,27 @@ from pprint import pprint
 import json
 import datetime
 import os
+from tkinter import messagebox
 
 
-#source: https://openweathermap.org/current
+# source: https://openweathermap.org/current
 # example geo: http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={API key}
 # example: https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
-
 URL_GEO_LOCATION = "http://api.openweathermap.org/geo/1.0/direct"
 URL_CURRENT_WEATHER = "https://api.openweathermap.org/data/2.5/weather"
 URL_FORECAST = "https://api.openweathermap.org/data/2.5/forecast"
-with open("./api_key.txt", "r") as source_file:
-    for sor in source_file:
-        API_KEY = sor.strip()
-    
 
+try:
+    with open("./api_key.txt", "r") as source_file:
+        for sor in source_file:
+            API_KEY = sor.strip()
+except FileNotFoundError:
+    messagebox.showerror("file not found", 
+                         "api-key not found.\n" \
+                            "1. create your api-key at https://openweathermap.org \n" \
+                            "2. create api_key.txt to main folder and paste your key \n" \
+                            "3. done" \
+                        )
 
 
 def get_geo_location(city_name, country_code=None):
@@ -25,14 +32,15 @@ def get_geo_location(city_name, country_code=None):
     required for other requests
     """
 
-    if country_code !=None:
+    if country_code != None:
         payload = {"q": city_name + ", " + country_code, "appid": API_KEY}
     else:
         payload = {"q": city_name, "appid": API_KEY}
     resp = requests.get(URL_GEO_LOCATION, params=payload)
     resp.encoding = "UTF-8"
     resp = resp.json()
-    if len(resp)==0:
+    if len(resp) == 0:
+        messagebox.showwarning("ValueError", "Nem találtunk ilyen nevű várost")
         raise ValueError("no city found with this name in database")
     return resp[0]["lat"], resp[0]["lon"]
 
@@ -50,13 +58,13 @@ def get_current_weather(city_name, country_code=None):
     resp.encoding = "UTF-8"
     resp = resp.json()
 
-    #create file with data
+    # create file with data
     with open("./data/last_data.json", "w") as celfajl:
         json.dump(resp, celfajl, indent=3, ensure_ascii=False)
     convert_current_weather(resp)
-    #megnyitja, de nem ugrik fel egyik módszerrel sem (elsőnél nem kell a "r")
-    #os.system(r".\data\last_data_converted.json")
-    #os.startfile(".\data\last_data_converted.json")
+    # works, but no popup
+    # os.system(r".\data\last_data_converted.json")
+    # os.startfile(".\data\last_data_converted.json")
     return resp
 
 
@@ -78,7 +86,7 @@ def convert_current_weather(data_json):
     data_json["timezone"] = str(datetime.timedelta(seconds=data_json["timezone"])) + " (shift from UTC)"
 
 
-    #create readable file
+    # create readable file
     with open("./data/last_data_converted.json", "w") as celfajl:
         json.dump(data_json, celfajl, indent=3, ensure_ascii=False)
 
@@ -90,11 +98,11 @@ def get_five_day_forecast(city_name, country_code=None):
     resp.encoding = "UTF-8"
     resp = resp.json()
 
-    #create file with data
+    # create file with data
     with open("./data/last_data.json", "w") as celfajl:
         json.dump(resp, celfajl, indent=3, ensure_ascii=False)
     convert_five_day_forecast(resp)
-    #os.system(r".\data\last_data_converted.json")
+    # os.system(r".\data\last_data_converted.json")
     return resp
 
 
@@ -116,7 +124,7 @@ def convert_five_day_forecast(data_json):
     data_json["city"]["sunset"] = str(datetime.datetime.fromtimestamp(data_json["city"]["sunset"]))
     data_json["city"]["timezone"] = str(datetime.timedelta(seconds=data_json["city"]["timezone"])) + " (shift from UTC)"
 
-    #create readable file
+    # create readable file
     with open("./data/last_data_converted.json", "w") as celfajl:
         json.dump(data_json, celfajl, indent=3, ensure_ascii=False)
 
