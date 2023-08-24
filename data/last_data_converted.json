@@ -4,42 +4,6 @@
    "cnt": 40,
    "list": [
       {
-         "dt": 1692878400,
-         "main": {
-            "temp": "33.96 C°",
-            "feels_like": "33.23 C°",
-            "temp_min": "33.96 C°",
-            "temp_max": "33.96 C°",
-            "pressure": 1015,
-            "sea_level": 1015,
-            "grnd_level": 1006,
-            "humidity": "30 %",
-            "temp_kf": 0
-         },
-         "weather": [
-            {
-               "id": 800,
-               "main": "Clear",
-               "description": "tiszta égbolt",
-               "icon": "01d"
-            }
-         ],
-         "clouds": {
-            "all": 0
-         },
-         "wind": {
-            "speed": 4.37,
-            "deg": 315,
-            "gust": 4.93
-         },
-         "visibility": "10000 meters",
-         "pop": 0,
-         "sys": {
-            "pod": "d"
-         },
-         "dt_txt": "2023-08-24 12:00:00"
-      },
-      {
          "dt": 1692889200,
          "main": {
             "temp": "33.97 C°",
@@ -1463,6 +1427,45 @@
             "pod": "d"
          },
          "dt_txt": "2023-08-29 09:00:00"
+      },
+      {
+         "dt": 1693310400,
+         "main": {
+            "temp": "30.06 C°",
+            "feels_like": "30.26 C°",
+            "temp_min": "30.06 C°",
+            "temp_max": "30.06 C°",
+            "pressure": 1006,
+            "sea_level": 1006,
+            "grnd_level": 996,
+            "humidity": "44 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 500,
+               "main": "Rain",
+               "description": "enyhe esõ",
+               "icon": "10d"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 4.4,
+            "deg": 18,
+            "gust": 4.96
+         },
+         "visibility": "10000 meters",
+         "pop": 0.36,
+         "rain": {
+            "3h": 0.15
+         },
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-08-29 12:00:00"
       }
    ],
    "city": {

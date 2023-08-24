@@ -145,132 +145,123 @@ def show_five_day_forecast(window, bottom_frame):
         # use dict keys
         if day == "Monday":
             if time == "00:00:00":
-                ###################### nincs "clouds" rendezve. id alapján kellett volna, ami így bajos. ->?egész ICONS-t id alapúra?. ->?átszervez ezt (kéne).
-                column1_dict["Label_row1_column1"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 1, 1))
+                column1_dict["Label_row1_column1"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column1_dict["Label_row2_column1"].config(text=merged_datas[index]["temp_list"])
                 column1_dict["Label_row3_column1"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "06:00:00":
-                column1_dict["Label_row4_column1"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 4, 1))
+                column1_dict["Label_row4_column1"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column1_dict["Label_row5_column1"].config(text=merged_datas[index]["temp_list"])
                 column1_dict["Label_row6_column1"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "12:00:00":
-                column1_dict["Label_row7_column1"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 7, 1))
+                column1_dict["Label_row7_column1"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column1_dict["Label_row8_column1"].config(text=merged_datas[index]["temp_list"])
                 column1_dict["Label_row9_column1"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "18:00:00":
-                column1_dict["Label_row10_column1"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 10, 1))
+                column1_dict["Label_row10_column1"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column1_dict["Label_row11_column1"].config(text=merged_datas[index]["temp_list"])
                 column1_dict["Label_row12_column1"].config(text=merged_datas[index]["weather_descr_list"])
         elif day == "Tuesday":
             if time == "00:00:00":
-                column2_dict["Label_row1_column2"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 1, 2))
+                column2_dict["Label_row1_column2"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column2_dict["Label_row2_column2"].config(text=merged_datas[index]["temp_list"])
                 column2_dict["Label_row3_column2"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "06:00:00":
-                column2_dict["Label_row4_column2"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 4, 2))
+                column2_dict["Label_row4_column2"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column2_dict["Label_row5_column2"].config(text=merged_datas[index]["temp_list"])
                 column2_dict["Label_row6_column2"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "12:00:00":
-                column2_dict["Label_row7_column2"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 7, 2))
+                column2_dict["Label_row7_column2"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column2_dict["Label_row8_column2"].config(text=merged_datas[index]["temp_list"])
                 column2_dict["Label_row9_column2"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "18:00:00":
-                column2_dict["Label_row10_column2"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 10, 2))
+                column2_dict["Label_row10_column2"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column2_dict["Label_row11_column2"].config(text=merged_datas[index]["temp_list"])
                 column2_dict["Label_row12_column2"].config(text=merged_datas[index]["weather_descr_list"])
         elif day == "Wednesday":
             if time == "00:00:00":
-                column3_dict["Label_row1_column3"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 1, 3))
+                column3_dict["Label_row1_column3"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column3_dict["Label_row2_column3"].config(text=merged_datas[index]["temp_list"])
                 column3_dict["Label_row3_column3"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "06:00:00":
-                column3_dict["Label_row4_column3"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 4, 3))
+                column3_dict["Label_row4_column3"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column3_dict["Label_row5_column3"].config(text=merged_datas[index]["temp_list"])
                 column3_dict["Label_row6_column3"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "12:00:00":
-                column3_dict["Label_row7_column3"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 7, 3))
+                column3_dict["Label_row7_column3"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column3_dict["Label_row8_column3"].config(text=merged_datas[index]["temp_list"])
                 column3_dict["Label_row9_column3"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "18:00:00":
-                column3_dict["Label_row10_column3"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 10, 3))
+                column3_dict["Label_row10_column3"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column3_dict["Label_row11_column3"].config(text=merged_datas[index]["temp_list"])
                 column3_dict["Label_row12_column3"].config(text=merged_datas[index]["weather_descr_list"])
         elif day == "Thursday":
             if time == "00:00:00":
-                column4_dict["Label_row1_column4"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 1, 4))
+                column4_dict["Label_row1_column4"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column4_dict["Label_row2_column4"].config(text=merged_datas[index]["temp_list"])
                 column4_dict["Label_row3_column4"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "06:00:00":
-                column4_dict["Label_row4_column4"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 4, 4))
+                column4_dict["Label_row4_column4"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column4_dict["Label_row5_column4"].config(text=merged_datas[index]["temp_list"])
                 column4_dict["Label_row6_column4"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "12:00:00":
-                column4_dict["Label_row7_column4"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 7, 4))
+                column4_dict["Label_row7_column4"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column4_dict["Label_row8_column4"].config(text=merged_datas[index]["temp_list"])
                 column4_dict["Label_row9_column4"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "18:00:00":
-                column4_dict["Label_row10_column4"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 10, 4))
+                column4_dict["Label_row10_column4"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column4_dict["Label_row11_column4"].config(text=merged_datas[index]["temp_list"])
                 column4_dict["Label_row12_column4"].config(text=merged_datas[index]["weather_descr_list"])
         elif day == "Friday":
             if time == "00:00:00":
-                column5_dict["Label_row1_column5"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 1, 5))
+                column5_dict["Label_row1_column5"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column5_dict["Label_row2_column5"].config(text=merged_datas[index]["temp_list"])
                 column5_dict["Label_row3_column5"].config(text=merged_datas[index]["weather_descr_list"])
             if time == "06:00:00":
-                column5_dict["Label_row4_column5"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 4, 5))
+                column5_dict["Label_row4_column5"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column5_dict["Label_row5_column5"].config(text=merged_datas[index]["temp_list"])
                 column5_dict["Label_row6_column5"].config(text=merged_datas[index]["weather_descr_list"])
             if time == "12:00:00":
-                column5_dict["Label_row7_column5"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 7, 5))
+                column5_dict["Label_row7_column5"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column5_dict["Label_row8_column5"].config(text=merged_datas[index]["temp_list"])
                 column5_dict["Label_row9_column5"].config(text=merged_datas[index]["weather_descr_list"])
             if time == "18:00:00":
-                column5_dict["Label_row10_column5"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 10, 5))
+                column5_dict["Label_row10_column5"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column5_dict["Label_row11_column5"].config(text=merged_datas[index]["temp_list"])
                 column5_dict["Label_row12_column5"].config(text=merged_datas[index]["weather_descr_list"])
         elif day == "Saturday":
             if time == "00:00:00":
-                column6_dict["Label_row1_column6"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 1, 6))
+                column6_dict["Label_row1_column6"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column6_dict["Label_row2_column6"].config(text=merged_datas[index]["temp_list"])
                 column6_dict["Label_row3_column6"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "06:00:00":
-                column6_dict["Label_row4_column6"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 4, 6))
+                column6_dict["Label_row4_column6"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column6_dict["Label_row5_column6"].config(text=merged_datas[index]["temp_list"])
                 column6_dict["Label_row6_column6"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "12:00:00":
-                column6_dict["Label_row7_column6"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 7, 6))
+                column6_dict["Label_row7_column6"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column6_dict["Label_row8_column6"].config(text=merged_datas[index]["temp_list"])
                 column6_dict["Label_row9_column6"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "18:00:00":
-                column6_dict["Label_row10_column6"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 10, 6))
+                column6_dict["Label_row10_column6"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column6_dict["Label_row11_column6"].config(text=merged_datas[index]["temp_list"])
                 column6_dict["Label_row12_column6"].config(text=merged_datas[index]["weather_descr_list"])
         elif day == "Sunday":
             if time == "00:00:00":
-                column7_dict["Label_row1_column7"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 1, 7))
+                column7_dict["Label_row1_column7"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column7_dict["Label_row2_column7"].config(text=merged_datas[index]["temp_list"])
                 column7_dict["Label_row3_column7"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "06:00:00":
-                column7_dict["Label_row4_column7"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 4, 7))
+                column7_dict["Label_row4_column7"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column7_dict["Label_row5_column7"].config(text=merged_datas[index]["temp_list"])
                 column7_dict["Label_row6_column7"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "12:00:00":
-                column7_dict["Label_row7_column7"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 7, 7))
+                column7_dict["Label_row7_column7"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column7_dict["Label_row8_column7"].config(text=merged_datas[index]["temp_list"])
                 column7_dict["Label_row9_column7"].config(text=merged_datas[index]["weather_descr_list"])
             elif time == "18:00:00":
-                column7_dict["Label_row10_column7"].config(image=show_image(bottom_frame, resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]], 10, 7))
+                column7_dict["Label_row10_column7"].config(image=resources.ICONS_BY_ID[merged_datas[index]["weather_id_list"]])
                 column7_dict["Label_row11_column7"].config(text=merged_datas[index]["temp_list"])
                 column7_dict["Label_row12_column7"].config(text=merged_datas[index]["weather_descr_list"])
-
-
-def show_image(window, image, row=0, column=0):
-    """
-    window: tkinter window or frame where the image will be placed
-    """
-    img_label = tkinter.Label(window, image=image, background="#6d9bc3")
-    img_label.grid(column=column, row=row)
 
 
 def select_json_info():

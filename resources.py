@@ -10,7 +10,6 @@ def load_images(window):
     """
     window = main tkinter window
     """
-    global img_background
     global img_clear_sky
     global img_rain
     global img_few_clouds
@@ -32,7 +31,6 @@ def load_images(window):
     global ICONS
     global ICONS_BY_ID
 
-    img_background = ImageTk.PhotoImage(Image.open("./img/images/background.png"))
     img_clear_sky = ImageTk.PhotoImage(Image.open("./img/images/clear_sky.jpg"))
     img_rain = ImageTk.PhotoImage(Image.open("./img/images/rain.jpg"))
     img_few_clouds = ImageTk.PhotoImage(Image.open("./img/images/few_clouds.jpg"))
