@@ -7,7 +7,7 @@ import resources
 # setup window
 window = tkinter.Tk()
 window_width = 750
-window_height = 400
+window_height = 450
 center_x = int(window.winfo_screenwidth() /2 - window_width /2)
 center_y = int(window.winfo_screenheight() /2 - window_height /2)
 window.geometry(f"{window_width}x{window_height}+{center_x}+{center_y}")
