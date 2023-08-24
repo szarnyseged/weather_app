@@ -63,20 +63,7 @@ def show_five_day_forecast(window, bottom_frame):
                              "weather_descr_list": weather_descr_list[index], 
                              "weather_id_list": weather_id_list[index], 
                              "weather_main_list": weather_main_list[index]})
-
-    """
-    column0_rowspan = 3
-    column0 = [
-        "",
-        "00:00:00",
-        "06:00:00",
-        "12:00:00",
-        "18:00:00",
-    ]
-
-    for row, elem in enumerate(column0):
-        tkinter.Label(bottom_frame, text=elem).grid(row=row+1, column=0, rowspan=column0_rowspan)
-    """
+        
 
     # setup gui
     # 0. column
