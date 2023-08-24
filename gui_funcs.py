@@ -43,118 +43,88 @@ def show_current_weather(window, frame):
             tkinter.Label(frame, image=resources.img_broken_clouds).grid(row=0, column=0)
 
 
-def show_five_day_forecast(window, bottom_frame):
-    total_grid_row = 13
+class Five_day_forecast:
 
-    remove_previous_search(bottom_frame)
-
-    # set background color
-    background_color = "#6d9bc3"
-    bottom_frame.config(background=background_color)
-
-    # get selected data
-    date_list, temp_list, weather_descr_list, weather_id_list, weather_main_list = select_json_info()
-
-    # merge lists
-    merged_datas = []
-    for index in range(len(date_list)):
-        merged_datas.append({"date_list": date_list[index], 
-                             "temp_list": temp_list[index], 
-                             "weather_descr_list": weather_descr_list[index], 
-                             "weather_id_list": weather_id_list[index], 
-                             "weather_main_list": weather_main_list[index]})
-
-    """
-    column0_rowspan = 3
-    column0 = [
-        "",
-        "00:00:00",
-        "06:00:00",
-        "12:00:00",
-        "18:00:00",
-    ]
-
-    for row, elem in enumerate(column0):
-        tkinter.Label(bottom_frame, text=elem).grid(row=row+1, column=0, rowspan=column0_rowspan)
-    """
-
-    # setup gui
-    # 0. column
-    Label_row0_column0 = tkinter.Label(bottom_frame, text="", background=background_color).grid(row=0, column=0)
-    Label_row1_column0 = tkinter.Label(bottom_frame, text="00:00:00", background=background_color).grid(row=1, column=0, rowspan=3)
-    Label_row3_column0 = tkinter.Label(bottom_frame, text="06:00:00", background=background_color).grid(row=4, column=0, rowspan=3)
-    Label_row5_column0 = tkinter.Label(bottom_frame, text="12:00:00", background=background_color).grid(row=7, column=0, rowspan=3)
-    Label_row7_column0 = tkinter.Label(bottom_frame, text="18:00:00", background=background_color).grid(row=10, column=0, rowspan=3)
+    def setup_table(self):
+        # setup gui
+        # 0. column
+        Label_row0_column0 = tkinter.Label(bottom_frame, text="", background=background_color).grid(row=0, column=0)
+        Label_row1_column0 = tkinter.Label(bottom_frame, text="00:00:00", background=background_color).grid(row=1, column=0, rowspan=3)
+        Label_row3_column0 = tkinter.Label(bottom_frame, text="06:00:00", background=background_color).grid(row=4, column=0, rowspan=3)
+        Label_row5_column0 = tkinter.Label(bottom_frame, text="12:00:00", background=background_color).grid(row=7, column=0, rowspan=3)
+        Label_row7_column0 = tkinter.Label(bottom_frame, text="18:00:00", background=background_color).grid(row=10, column=0, rowspan=3)
 
 
-    # 1. column
-    # to fill the flexible data to the appropriate position, we must use separated widgets with names
-    # create dictionaries of label objects with name:"Label_row{number}_column{number}"
-    # note: ".grid" line must be separated, because ".config"
-    Label_row0_column1 = tkinter.Label(bottom_frame, text="Hétfő", background=background_color)
-    Label_row0_column1.grid(row=0, column=1)
-    column1_dict = {}
-    for index in range(1, total_grid_row):
-        column1_dict["Label_row{}_column1".format(index)] = tkinter.Label(bottom_frame, background=background_color)
-        column1_dict["Label_row{}_column1".format(index)].grid(row=index, column=1)
+        # 1. column
+        # to fill the flexible data to the appropriate position, we must use separated widgets with names
+        # create dictionaries of label objects with name:"Label_row{number}_column{number}"
+        # note: ".grid" line must be separated, because ".config"
+        Label_row0_column1 = tkinter.Label(bottom_frame, text="Hétfő", background=background_color)
+        Label_row0_column1.grid(row=0, column=1)
+        column1_dict = {}
+        for index in range(1, total_grid_row):
+            column1_dict["Label_row{}_column1".format(index)] = tkinter.Label(bottom_frame, background=background_color)
+            column1_dict["Label_row{}_column1".format(index)].grid(row=index, column=1)
 
 
-    # 2. column
-    Label_row0_column2 = tkinter.Label(bottom_frame, text="Kedd", background=background_color)
-    Label_row0_column2.grid(row=0, column=2)
-    column2_dict = {}
-    for index in range(1, total_grid_row):
-        column2_dict["Label_row{}_column2".format(index)] = tkinter.Label(bottom_frame, background=background_color)
-        column2_dict["Label_row{}_column2".format(index)].grid(row=index, column=2)
+        # 2. column
+        Label_row0_column2 = tkinter.Label(bottom_frame, text="Kedd", background=background_color)
+        Label_row0_column2.grid(row=0, column=2)
+        column2_dict = {}
+        for index in range(1, total_grid_row):
+            column2_dict["Label_row{}_column2".format(index)] = tkinter.Label(bottom_frame, background=background_color)
+            column2_dict["Label_row{}_column2".format(index)].grid(row=index, column=2)
 
-    # 3. column
-    Label_row0_column3 = tkinter.Label(bottom_frame, text="Szerda", background=background_color)
-    Label_row0_column3.grid(row=0, column=3)
-    column3_dict = {}
-    for index in range(1, total_grid_row):
-        column3_dict["Label_row{}_column3".format(index)] = tkinter.Label(bottom_frame, background=background_color)
-        column3_dict["Label_row{}_column3".format(index)].grid(row=index, column=3)
-
-
-    # 4. column
-    Label_row0_column4 = tkinter.Label(bottom_frame, text="Csütörtök", background=background_color)
-    Label_row0_column4.grid(row=0, column=4)
-    column4_dict = {}
-    for index in range(1, total_grid_row):
-        column4_dict["Label_row{}_column4".format(index)] = tkinter.Label(bottom_frame, background=background_color)
-        column4_dict["Label_row{}_column4".format(index)].grid(row=index, column=4)
+        # 3. column
+        Label_row0_column3 = tkinter.Label(bottom_frame, text="Szerda", background=background_color)
+        Label_row0_column3.grid(row=0, column=3)
+        column3_dict = {}
+        for index in range(1, total_grid_row):
+            column3_dict["Label_row{}_column3".format(index)] = tkinter.Label(bottom_frame, background=background_color)
+            column3_dict["Label_row{}_column3".format(index)].grid(row=index, column=3)
 
 
-    # 5. column
-    Label_row0_column5 = tkinter.Label(bottom_frame, text="Péntek", background=background_color)
-    Label_row0_column5.grid(row=0, column=5)
-    column5_dict = {}
-    for index in range(1, total_grid_row):
-        column5_dict["Label_row{}_column5".format(index)] = tkinter.Label(bottom_frame, background=background_color)
-        column5_dict["Label_row{}_column5".format(index)].grid(row=index, column=5)
-
-    # 6. column
-    Label_row0_column6 = tkinter.Label(bottom_frame, text="Szombat", background=background_color)
-    Label_row0_column6.grid(row=0, column=6)
-    column6_dict = {}
-    for index in range(1, total_grid_row):
-        column6_dict["Label_row{}_column6".format(index)] = tkinter.Label(bottom_frame, background=background_color)
-        column6_dict["Label_row{}_column6".format(index)].grid(row=index, column=6)
-
-    # 7. column
-    Label_row0_column7 = tkinter.Label(bottom_frame, text="Vasárnap", background=background_color)
-    Label_row0_column7.grid(row=0, column=7)
-    column7_dict = {}
-    for index in range(1, total_grid_row):
-        column7_dict["Label_row{}_column7".format(index)] = tkinter.Label(bottom_frame, background=background_color)
-        column7_dict["Label_row{}_column7".format(index)].grid(row=index, column=7)
+        # 4. column
+        Label_row0_column4 = tkinter.Label(bottom_frame, text="Csütörtök", background=background_color)
+        Label_row0_column4.grid(row=0, column=4)
+        column4_dict = {}
+        for index in range(1, total_grid_row):
+            column4_dict["Label_row{}_column4".format(index)] = tkinter.Label(bottom_frame, background=background_color)
+            column4_dict["Label_row{}_column4".format(index)].grid(row=index, column=4)
 
 
-    # fill data
-    for index in range(len(merged_datas)):
-        day_time = datetime.datetime.strptime(merged_datas[index]["date_list"], "%Y-%m-%d %H:%M:%S")
-        day = datetime.datetime.strftime(day_time, "%A")
-        time = datetime.datetime.strftime(day_time, "%H:%M:%S")
+        # 5. column
+        Label_row0_column5 = tkinter.Label(bottom_frame, text="Péntek", background=background_color)
+        Label_row0_column5.grid(row=0, column=5)
+        column5_dict = {}
+        for index in range(1, total_grid_row):
+            column5_dict["Label_row{}_column5".format(index)] = tkinter.Label(bottom_frame, background=background_color)
+            column5_dict["Label_row{}_column5".format(index)].grid(row=index, column=5)
+
+        # 6. column
+        Label_row0_column6 = tkinter.Label(bottom_frame, text="Szombat", background=background_color)
+        Label_row0_column6.grid(row=0, column=6)
+        column6_dict = {}
+        for index in range(1, total_grid_row):
+            column6_dict["Label_row{}_column6".format(index)] = tkinter.Label(bottom_frame, background=background_color)
+            column6_dict["Label_row{}_column6".format(index)].grid(row=index, column=6)
+
+        # 7. column
+        Label_row0_column7 = tkinter.Label(bottom_frame, text="Vasárnap", background=background_color)
+        Label_row0_column7.grid(row=0, column=7)
+        column7_dict = {}
+        for index in range(1, total_grid_row):
+            column7_dict["Label_row{}_column7".format(index)] = tkinter.Label(bottom_frame, background=background_color)
+            column7_dict["Label_row{}_column7".format(index)].grid(row=index, column=7)
+
+
+
+    def fill_data(self):
+        # fill data
+        for index in range(len(merged_datas)):
+            day_time = datetime.datetime.strptime(merged_datas[index]["date_list"], "%Y-%m-%d %H:%M:%S")
+            day = datetime.datetime.strftime(day_time, "%A")
+            time = datetime.datetime.strftime(day_time, "%H:%M:%S")
         # use dict keys
         if day == "Monday":
             if time == "00:00:00":
@@ -278,43 +248,25 @@ def show_five_day_forecast(window, bottom_frame):
                 column7_dict["Label_row12_column7"].config(text=merged_datas[index]["weather_descr_list"])
 
 
+    def remove_previous_search(self, frame):
+        """
+        frame: window or frame to forget all grid
+        """
+        for elem in frame.grid_slaves():
+            elem.grid_forget()
+
+
+def show_five_day_forecast(window, bottom_frame):
+    pass
+
+
+
 def show_image(window, image, row=0, column=0):
     """
     window: tkinter window or frame where the image will be placed
     """
     img_label = tkinter.Label(window, image=image, background="#6d9bc3")
     img_label.grid(column=column, row=row)
-
-
-def select_json_info():
-    """
-    select needed informations from last_data_converted.json
-
-    returns (date_list, temp_list, weather_descr_list, weather_id_list, weather_main_list)
-    """
-
-    with open("./data/last_data_converted.json", "r") as source_file:
-        datas = json.load(source_file)
-
-    # select needed infos
-    date_list = []
-    temp_list = []
-    weather_descr_list = []
-    weather_id_list = []
-    weather_main_list = []
-
-    for index in range(len(datas["list"])):
-        chosen_date = datas["list"][index]["dt_txt"]
-        chosen_date = datetime.datetime.strptime(chosen_date, "%Y-%m-%d %H:%M:%S")
-        chosen_date = str(chosen_date.time())
-        # select 6:00, 12:00, 18:00, 00:00 time datas
-        if chosen_date == "06:00:00" or chosen_date == "12:00:00" or chosen_date == "18:00:00" or chosen_date == "00:00:00":
-            date_list.append(datas["list"][index]["dt_txt"])
-            temp_list.append(datas["list"][index]["main"]["temp"])
-            weather_descr_list.append(datas["list"][index]["weather"][0]["description"])
-            weather_id_list.append(datas["list"][index]["weather"][0]["id"])
-            weather_main_list.append(datas["list"][index]["weather"][0]["main"])
-    return date_list, temp_list, weather_descr_list, weather_id_list, weather_main_list
 
 
 def remove_previous_search(frame):
