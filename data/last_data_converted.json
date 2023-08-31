@@ -1,44 +1,1472 @@
 {
-   "coord": {
-      "lon": 20.154,
-      "lat": 46.2527
-   },
-   "weather": [
+   "cod": "200",
+   "message": 0,
+   "cnt": 40,
+   "list": [
       {
-         "id": 803,
-         "main": "Clouds",
-         "description": "erõs felhõzet",
-         "icon": "04d"
+         "dt": 1693504800,
+         "main": {
+            "temp": "18.35 C°",
+            "feels_like": "17.89 C°",
+            "temp_min": "18.35 C°",
+            "temp_max": "18.35 C°",
+            "pressure": 1014,
+            "sea_level": 1014,
+            "grnd_level": 1000,
+            "humidity": "63 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 63
+         },
+         "wind": {
+            "speed": 2.1,
+            "deg": 292,
+            "gust": 3.09
+         },
+         "visibility": "10000 meters",
+         "pop": 0.41,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-08-31 18:00:00"
+      },
+      {
+         "dt": 1693515600,
+         "main": {
+            "temp": "17.53 C°",
+            "feels_like": "17.06 C°",
+            "temp_min": "15.89 C°",
+            "temp_max": "17.53 C°",
+            "pressure": 1015,
+            "sea_level": 1015,
+            "grnd_level": 1002,
+            "humidity": "66 %",
+            "temp_kf": 1.64
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 61
+         },
+         "wind": {
+            "speed": 2.18,
+            "deg": 299,
+            "gust": 2.32
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-08-31 21:00:00"
+      },
+      {
+         "dt": 1693526400,
+         "main": {
+            "temp": "15.62 C°",
+            "feels_like": "15.01 C°",
+            "temp_min": "14.26 C°",
+            "temp_max": "15.62 C°",
+            "pressure": 1016,
+            "sea_level": 1016,
+            "grnd_level": 1003,
+            "humidity": "68 %",
+            "temp_kf": 1.36
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 67
+         },
+         "wind": {
+            "speed": 2.21,
+            "deg": 311,
+            "gust": 2.18
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-01 00:00:00"
+      },
+      {
+         "dt": 1693537200,
+         "main": {
+            "temp": "13.81 C°",
+            "feels_like": "13.05 C°",
+            "temp_min": "13.81 C°",
+            "temp_max": "13.81 C°",
+            "pressure": 1018,
+            "sea_level": 1018,
+            "grnd_level": 1004,
+            "humidity": "69 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 90
+         },
+         "wind": {
+            "speed": 1.66,
+            "deg": 301,
+            "gust": 1.73
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-01 03:00:00"
+      },
+      {
+         "dt": 1693548000,
+         "main": {
+            "temp": "17.38 C°",
+            "feels_like": "16.69 C°",
+            "temp_min": "17.38 C°",
+            "temp_max": "17.38 C°",
+            "pressure": 1019,
+            "sea_level": 1019,
+            "grnd_level": 1005,
+            "humidity": "58 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 82
+         },
+         "wind": {
+            "speed": 0.67,
+            "deg": 288,
+            "gust": 1.37
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-01 06:00:00"
+      },
+      {
+         "dt": 1693558800,
+         "main": {
+            "temp": "23.4 C°",
+            "feels_like": "22.87 C°",
+            "temp_min": "23.4 C°",
+            "temp_max": "23.4 C°",
+            "pressure": 1019,
+            "sea_level": 1019,
+            "grnd_level": 1005,
+            "humidity": "41 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 80
+         },
+         "wind": {
+            "speed": 2.62,
+            "deg": 266,
+            "gust": 5.28
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-01 09:00:00"
+      },
+      {
+         "dt": 1693569600,
+         "main": {
+            "temp": "25.81 C°",
+            "feels_like": "25.33 C°",
+            "temp_min": "25.81 C°",
+            "temp_max": "25.81 C°",
+            "pressure": 1018,
+            "sea_level": 1018,
+            "grnd_level": 1005,
+            "humidity": "34 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 63
+         },
+         "wind": {
+            "speed": 3.79,
+            "deg": 253,
+            "gust": 6.07
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-01 12:00:00"
+      },
+      {
+         "dt": 1693580400,
+         "main": {
+            "temp": "25.27 C°",
+            "feels_like": "24.87 C°",
+            "temp_min": "25.27 C°",
+            "temp_max": "25.27 C°",
+            "pressure": 1018,
+            "sea_level": 1018,
+            "grnd_level": 1004,
+            "humidity": "39 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 2.94,
+            "deg": 269,
+            "gust": 5
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-01 15:00:00"
+      },
+      {
+         "dt": 1693591200,
+         "main": {
+            "temp": "19.45 C°",
+            "feels_like": "18.91 C°",
+            "temp_min": "19.45 C°",
+            "temp_max": "19.45 C°",
+            "pressure": 1019,
+            "sea_level": 1019,
+            "grnd_level": 1005,
+            "humidity": "56 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 81
+         },
+         "wind": {
+            "speed": 1.56,
+            "deg": 331,
+            "gust": 1.65
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-01 18:00:00"
+      },
+      {
+         "dt": 1693602000,
+         "main": {
+            "temp": "17.74 C°",
+            "feels_like": "17.19 C°",
+            "temp_min": "17.74 C°",
+            "temp_max": "17.74 C°",
+            "pressure": 1020,
+            "sea_level": 1020,
+            "grnd_level": 1006,
+            "humidity": "62 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 64
+         },
+         "wind": {
+            "speed": 1.1,
+            "deg": 345,
+            "gust": 1.29
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-01 21:00:00"
+      },
+      {
+         "dt": 1693612800,
+         "main": {
+            "temp": "17.26 C°",
+            "feels_like": "16.71 C°",
+            "temp_min": "17.26 C°",
+            "temp_max": "17.26 C°",
+            "pressure": 1020,
+            "sea_level": 1020,
+            "grnd_level": 1006,
+            "humidity": "64 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 81
+         },
+         "wind": {
+            "speed": 1.15,
+            "deg": 346,
+            "gust": 1.19
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-02 00:00:00"
+      },
+      {
+         "dt": 1693623600,
+         "main": {
+            "temp": "16.03 C°",
+            "feels_like": "15.46 C°",
+            "temp_min": "16.03 C°",
+            "temp_max": "16.03 C°",
+            "pressure": 1020,
+            "sea_level": 1020,
+            "grnd_level": 1006,
+            "humidity": "68 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 802,
+               "main": "Clouds",
+               "description": "szórványos felhõzet",
+               "icon": "03n"
+            }
+         ],
+         "clouds": {
+            "all": 42
+         },
+         "wind": {
+            "speed": 0.98,
+            "deg": 343,
+            "gust": 1.11
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-02 03:00:00"
+      },
+      {
+         "dt": 1693634400,
+         "main": {
+            "temp": "19.28 C°",
+            "feels_like": "18.8 C°",
+            "temp_min": "19.28 C°",
+            "temp_max": "19.28 C°",
+            "pressure": 1021,
+            "sea_level": 1021,
+            "grnd_level": 1006,
+            "humidity": "59 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 802,
+               "main": "Clouds",
+               "description": "szórványos felhõzet",
+               "icon": "03d"
+            }
+         ],
+         "clouds": {
+            "all": 29
+         },
+         "wind": {
+            "speed": 0.49,
+            "deg": 308,
+            "gust": 0.76
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-02 06:00:00"
+      },
+      {
+         "dt": 1693645200,
+         "main": {
+            "temp": "25.47 C°",
+            "feels_like": "25.17 C°",
+            "temp_min": "25.47 C°",
+            "temp_max": "25.47 C°",
+            "pressure": 1021,
+            "sea_level": 1021,
+            "grnd_level": 1007,
+            "humidity": "42 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01d"
+            }
+         ],
+         "clouds": {
+            "all": 8
+         },
+         "wind": {
+            "speed": 1.69,
+            "deg": 180,
+            "gust": 2.59
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-02 09:00:00"
+      },
+      {
+         "dt": 1693656000,
+         "main": {
+            "temp": "28.8 C°",
+            "feels_like": "27.95 C°",
+            "temp_min": "28.8 C°",
+            "temp_max": "28.8 C°",
+            "pressure": 1020,
+            "sea_level": 1020,
+            "grnd_level": 1006,
+            "humidity": "34 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01d"
+            }
+         ],
+         "clouds": {
+            "all": 5
+         },
+         "wind": {
+            "speed": 2.46,
+            "deg": 206,
+            "gust": 3.79
+         },
+         "visibility": "10000 meters",
+         "pop": 0.01,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-02 12:00:00"
+      },
+      {
+         "dt": 1693666800,
+         "main": {
+            "temp": "28.82 C°",
+            "feels_like": "27.97 C°",
+            "temp_min": "28.82 C°",
+            "temp_max": "28.82 C°",
+            "pressure": 1019,
+            "sea_level": 1019,
+            "grnd_level": 1006,
+            "humidity": "34 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01d"
+            }
+         ],
+         "clouds": {
+            "all": 5
+         },
+         "wind": {
+            "speed": 2.04,
+            "deg": 223,
+            "gust": 3.1
+         },
+         "visibility": "10000 meters",
+         "pop": 0.03,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-02 15:00:00"
+      },
+      {
+         "dt": 1693677600,
+         "main": {
+            "temp": "22.76 C°",
+            "feels_like": "22.48 C°",
+            "temp_min": "22.76 C°",
+            "temp_max": "22.76 C°",
+            "pressure": 1021,
+            "sea_level": 1021,
+            "grnd_level": 1006,
+            "humidity": "53 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 801,
+               "main": "Clouds",
+               "description": "kevés felhõ",
+               "icon": "02n"
+            }
+         ],
+         "clouds": {
+            "all": 14
+         },
+         "wind": {
+            "speed": 1.67,
+            "deg": 309,
+            "gust": 1.82
+         },
+         "visibility": "10000 meters",
+         "pop": 0.07,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-02 18:00:00"
+      },
+      {
+         "dt": 1693688400,
+         "main": {
+            "temp": "19.99 C°",
+            "feels_like": "19.79 C°",
+            "temp_min": "19.99 C°",
+            "temp_max": "19.99 C°",
+            "pressure": 1022,
+            "sea_level": 1022,
+            "grnd_level": 1007,
+            "humidity": "67 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01n"
+            }
+         ],
+         "clouds": {
+            "all": 9
+         },
+         "wind": {
+            "speed": 2.14,
+            "deg": 353,
+            "gust": 2.23
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-02 21:00:00"
+      },
+      {
+         "dt": 1693699200,
+         "main": {
+            "temp": "18.09 C°",
+            "feels_like": "17.99 C°",
+            "temp_min": "18.09 C°",
+            "temp_max": "18.09 C°",
+            "pressure": 1022,
+            "sea_level": 1022,
+            "grnd_level": 1008,
+            "humidity": "78 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01n"
+            }
+         ],
+         "clouds": {
+            "all": 8
+         },
+         "wind": {
+            "speed": 2.59,
+            "deg": 355,
+            "gust": 3.48
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-03 00:00:00"
+      },
+      {
+         "dt": 1693710000,
+         "main": {
+            "temp": "16.91 C°",
+            "feels_like": "16.88 C°",
+            "temp_min": "16.91 C°",
+            "temp_max": "16.91 C°",
+            "pressure": 1022,
+            "sea_level": 1022,
+            "grnd_level": 1007,
+            "humidity": "85 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01n"
+            }
+         ],
+         "clouds": {
+            "all": 9
+         },
+         "wind": {
+            "speed": 2.69,
+            "deg": 349,
+            "gust": 3.87
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-03 03:00:00"
+      },
+      {
+         "dt": 1693720800,
+         "main": {
+            "temp": "19.63 C°",
+            "feels_like": "19.55 C°",
+            "temp_min": "19.63 C°",
+            "temp_max": "19.63 C°",
+            "pressure": 1022,
+            "sea_level": 1022,
+            "grnd_level": 1008,
+            "humidity": "73 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 51
+         },
+         "wind": {
+            "speed": 2.56,
+            "deg": 356,
+            "gust": 3.59
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-03 06:00:00"
+      },
+      {
+         "dt": 1693731600,
+         "main": {
+            "temp": "21.38 C°",
+            "feels_like": "21.38 C°",
+            "temp_min": "21.38 C°",
+            "temp_max": "21.38 C°",
+            "pressure": 1023,
+            "sea_level": 1023,
+            "grnd_level": 1009,
+            "humidity": "69 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 500,
+               "main": "Rain",
+               "description": "enyhe esõ",
+               "icon": "10d"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 2.94,
+            "deg": 30,
+            "gust": 4.56
+         },
+         "visibility": "10000 meters",
+         "pop": 0.44,
+         "rain": {
+            "3h": 0.22
+         },
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-03 09:00:00"
+      },
+      {
+         "dt": 1693742400,
+         "main": {
+            "temp": "24.84 C°",
+            "feels_like": "24.79 C°",
+            "temp_min": "24.84 C°",
+            "temp_max": "24.84 C°",
+            "pressure": 1022,
+            "sea_level": 1022,
+            "grnd_level": 1008,
+            "humidity": "54 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 500,
+               "main": "Rain",
+               "description": "enyhe esõ",
+               "icon": "10d"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 1.59,
+            "deg": 56,
+            "gust": 2.01
+         },
+         "visibility": "10000 meters",
+         "pop": 0.4,
+         "rain": {
+            "3h": 0.17
+         },
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-03 12:00:00"
+      },
+      {
+         "dt": 1693753200,
+         "main": {
+            "temp": "22.65 C°",
+            "feels_like": "22.72 C°",
+            "temp_min": "22.65 C°",
+            "temp_max": "22.65 C°",
+            "pressure": 1022,
+            "sea_level": 1022,
+            "grnd_level": 1008,
+            "humidity": "67 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 501,
+               "main": "Rain",
+               "description": "közepes esõ",
+               "icon": "10d"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 3.31,
+            "deg": 14,
+            "gust": 3.88
+         },
+         "visibility": "10000 meters",
+         "pop": 0.92,
+         "rain": {
+            "3h": 3.09
+         },
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-03 15:00:00"
+      },
+      {
+         "dt": 1693764000,
+         "main": {
+            "temp": "18.42 C°",
+            "feels_like": "18.41 C°",
+            "temp_min": "18.42 C°",
+            "temp_max": "18.42 C°",
+            "pressure": 1024,
+            "sea_level": 1024,
+            "grnd_level": 1009,
+            "humidity": "80 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 500,
+               "main": "Rain",
+               "description": "enyhe esõ",
+               "icon": "10n"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 3.63,
+            "deg": 10,
+            "gust": 9.04
+         },
+         "visibility": "10000 meters",
+         "pop": 0.94,
+         "rain": {
+            "3h": 0.71
+         },
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-03 18:00:00"
+      },
+      {
+         "dt": 1693774800,
+         "main": {
+            "temp": "16.91 C°",
+            "feels_like": "16.67 C°",
+            "temp_min": "16.91 C°",
+            "temp_max": "16.91 C°",
+            "pressure": 1025,
+            "sea_level": 1025,
+            "grnd_level": 1010,
+            "humidity": "77 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 4.07,
+            "deg": 356,
+            "gust": 9.26
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-03 21:00:00"
+      },
+      {
+         "dt": 1693785600,
+         "main": {
+            "temp": "16.26 C°",
+            "feels_like": "15.87 C°",
+            "temp_min": "16.26 C°",
+            "temp_max": "16.26 C°",
+            "pressure": 1024,
+            "sea_level": 1024,
+            "grnd_level": 1010,
+            "humidity": "74 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 100
+         },
+         "wind": {
+            "speed": 3.9,
+            "deg": 347,
+            "gust": 8.43
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-04 00:00:00"
+      },
+      {
+         "dt": 1693796400,
+         "main": {
+            "temp": "14.79 C°",
+            "feels_like": "14.28 C°",
+            "temp_min": "14.79 C°",
+            "temp_max": "14.79 C°",
+            "pressure": 1024,
+            "sea_level": 1024,
+            "grnd_level": 1010,
+            "humidity": "75 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04n"
+            }
+         ],
+         "clouds": {
+            "all": 90
+         },
+         "wind": {
+            "speed": 3.58,
+            "deg": 336,
+            "gust": 7.88
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-04 03:00:00"
+      },
+      {
+         "dt": 1693807200,
+         "main": {
+            "temp": "17.5 C°",
+            "feels_like": "17 C°",
+            "temp_min": "17.5 C°",
+            "temp_max": "17.5 C°",
+            "pressure": 1025,
+            "sea_level": 1025,
+            "grnd_level": 1011,
+            "humidity": "65 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 85
+         },
+         "wind": {
+            "speed": 4.71,
+            "deg": 354,
+            "gust": 9.93
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-04 06:00:00"
+      },
+      {
+         "dt": 1693818000,
+         "main": {
+            "temp": "23.01 C°",
+            "feels_like": "22.41 C°",
+            "temp_min": "23.01 C°",
+            "temp_max": "23.01 C°",
+            "pressure": 1026,
+            "sea_level": 1026,
+            "grnd_level": 1012,
+            "humidity": "40 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 96
+         },
+         "wind": {
+            "speed": 6.66,
+            "deg": 24,
+            "gust": 9.08
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-04 09:00:00"
+      },
+      {
+         "dt": 1693828800,
+         "main": {
+            "temp": "24.85 C°",
+            "feels_like": "24.3 C°",
+            "temp_min": "24.85 C°",
+            "temp_max": "24.85 C°",
+            "pressure": 1024,
+            "sea_level": 1024,
+            "grnd_level": 1010,
+            "humidity": "35 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 804,
+               "main": "Clouds",
+               "description": "borús égbolt",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 91
+         },
+         "wind": {
+            "speed": 6.1,
+            "deg": 29,
+            "gust": 7.33
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-04 12:00:00"
+      },
+      {
+         "dt": 1693839600,
+         "main": {
+            "temp": "23.63 C°",
+            "feels_like": "23.09 C°",
+            "temp_min": "23.63 C°",
+            "temp_max": "23.63 C°",
+            "pressure": 1024,
+            "sea_level": 1024,
+            "grnd_level": 1010,
+            "humidity": "40 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 801,
+               "main": "Clouds",
+               "description": "kevés felhõ",
+               "icon": "02d"
+            }
+         ],
+         "clouds": {
+            "all": 15
+         },
+         "wind": {
+            "speed": 5.41,
+            "deg": 20,
+            "gust": 6.6
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-04 15:00:00"
+      },
+      {
+         "dt": 1693850400,
+         "main": {
+            "temp": "17.85 C°",
+            "feels_like": "17.18 C°",
+            "temp_min": "17.85 C°",
+            "temp_max": "17.85 C°",
+            "pressure": 1025,
+            "sea_level": 1025,
+            "grnd_level": 1010,
+            "humidity": "57 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01n"
+            }
+         ],
+         "clouds": {
+            "all": 9
+         },
+         "wind": {
+            "speed": 3.08,
+            "deg": 9,
+            "gust": 8.29
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-04 18:00:00"
+      },
+      {
+         "dt": 1693861200,
+         "main": {
+            "temp": "15.91 C°",
+            "feels_like": "15.23 C°",
+            "temp_min": "15.91 C°",
+            "temp_max": "15.91 C°",
+            "pressure": 1025,
+            "sea_level": 1025,
+            "grnd_level": 1010,
+            "humidity": "64 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01n"
+            }
+         ],
+         "clouds": {
+            "all": 10
+         },
+         "wind": {
+            "speed": 3.37,
+            "deg": 351,
+            "gust": 6.85
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-04 21:00:00"
+      },
+      {
+         "dt": 1693872000,
+         "main": {
+            "temp": "14.8 C°",
+            "feels_like": "14.16 C°",
+            "temp_min": "14.8 C°",
+            "temp_max": "14.8 C°",
+            "pressure": 1024,
+            "sea_level": 1024,
+            "grnd_level": 1010,
+            "humidity": "70 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01n"
+            }
+         ],
+         "clouds": {
+            "all": 10
+         },
+         "wind": {
+            "speed": 2.71,
+            "deg": 339,
+            "gust": 4.34
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-05 00:00:00"
+      },
+      {
+         "dt": 1693882800,
+         "main": {
+            "temp": "14.56 C°",
+            "feels_like": "13.93 C°",
+            "temp_min": "14.56 C°",
+            "temp_max": "14.56 C°",
+            "pressure": 1023,
+            "sea_level": 1023,
+            "grnd_level": 1009,
+            "humidity": "71 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01n"
+            }
+         ],
+         "clouds": {
+            "all": 7
+         },
+         "wind": {
+            "speed": 2.66,
+            "deg": 338,
+            "gust": 4
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "n"
+         },
+         "dt_txt": "2023-09-05 03:00:00"
+      },
+      {
+         "dt": 1693893600,
+         "main": {
+            "temp": "17.64 C°",
+            "feels_like": "17.03 C°",
+            "temp_min": "17.64 C°",
+            "temp_max": "17.64 C°",
+            "pressure": 1024,
+            "sea_level": 1024,
+            "grnd_level": 1009,
+            "humidity": "60 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 800,
+               "main": "Clear",
+               "description": "tiszta égbolt",
+               "icon": "01d"
+            }
+         ],
+         "clouds": {
+            "all": 6
+         },
+         "wind": {
+            "speed": 1.91,
+            "deg": 7,
+            "gust": 2.58
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-05 06:00:00"
+      },
+      {
+         "dt": 1693904400,
+         "main": {
+            "temp": "23.23 C°",
+            "feels_like": "22.65 C°",
+            "temp_min": "23.23 C°",
+            "temp_max": "23.23 C°",
+            "pressure": 1023,
+            "sea_level": 1023,
+            "grnd_level": 1009,
+            "humidity": "40 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 803,
+               "main": "Clouds",
+               "description": "erõs felhõzet",
+               "icon": "04d"
+            }
+         ],
+         "clouds": {
+            "all": 54
+         },
+         "wind": {
+            "speed": 1,
+            "deg": 45,
+            "gust": 0.84
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-05 09:00:00"
+      },
+      {
+         "dt": 1693915200,
+         "main": {
+            "temp": "26.74 C°",
+            "feels_like": "26.34 C°",
+            "temp_min": "26.74 C°",
+            "temp_max": "26.74 C°",
+            "pressure": 1020,
+            "sea_level": 1020,
+            "grnd_level": 1007,
+            "humidity": "32 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 802,
+               "main": "Clouds",
+               "description": "szórványos felhõzet",
+               "icon": "03d"
+            }
+         ],
+         "clouds": {
+            "all": 46
+         },
+         "wind": {
+            "speed": 1.13,
+            "deg": 160,
+            "gust": 1.85
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-05 12:00:00"
+      },
+      {
+         "dt": 1693926000,
+         "main": {
+            "temp": "27.27 C°",
+            "feels_like": "26.72 C°",
+            "temp_min": "27.27 C°",
+            "temp_max": "27.27 C°",
+            "pressure": 1018,
+            "sea_level": 1018,
+            "grnd_level": 1005,
+            "humidity": "33 %",
+            "temp_kf": 0
+         },
+         "weather": [
+            {
+               "id": 802,
+               "main": "Clouds",
+               "description": "szórványos felhõzet",
+               "icon": "03d"
+            }
+         ],
+         "clouds": {
+            "all": 38
+         },
+         "wind": {
+            "speed": 0.9,
+            "deg": 194,
+            "gust": 2.57
+         },
+         "visibility": "10000 meters",
+         "pop": 0,
+         "sys": {
+            "pod": "d"
+         },
+         "dt_txt": "2023-09-05 15:00:00"
       }
    ],
-   "base": "stations",
-   "main": {
-      "temp": "25.99 C°",
-      "feels_like": "25.99 C°",
-      "temp_min": "25.99 C°",
-      "temp_max": "25.99 C°",
-      "pressure": 1013,
-      "humidity": "34 %",
-      "sea_level": 1013,
-      "grnd_level": 1004
-   },
-   "visibility": "10000 meters",
-   "wind": {
-      "speed": 4.94,
-      "deg": 308,
-      "gust": 4.88
-   },
-   "clouds": {
-      "all": 67
-   },
-   "dt": "2023-08-31 14:12:25",
-   "sys": {
+   "city": {
+      "id": 717582,
+      "name": "Miskolc",
+      "coord": {
+         "lat": 48.1031,
+         "lon": 20.79
+      },
       "country": "HU",
-      "sunrise": "2023-08-31 05:58:02",
-      "sunset": "2023-08-31 19:22:08"
-   },
-   "timezone": "2:00:00 (shift from UTC)",
-   "id": 715429,
-   "name": "Szeged",
-   "cod": 200
+      "population": 172637,
+      "timezone": "2:00:00 (shift from UTC)",
+      "sunrise": "2023-08-31 05:52:48",
+      "sunset": "2023-08-31 19:22:17"
+   }
 }

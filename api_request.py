@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 import json
 import datetime
 import os
@@ -41,8 +40,10 @@ def get_geo_location(city_name, country_code=None):
     resp = resp.json()
     if len(resp) == 0:
         messagebox.showwarning("ValueError", "Nem találtunk ilyen nevű várost")
-        raise ValueError("no city found with this name in database")
+        #raise ValueError("no city found with this name in database")
     return resp[0]["lat"], resp[0]["lon"]
+
+
 
 
 def get_current_weather(city_name, country_code=None):
