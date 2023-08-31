@@ -13,6 +13,7 @@ center_y = int(window.winfo_screenheight() /2 - window_height /2)
 window.geometry(f"{window_width}x{window_height}+{center_x}+{center_y}")
 window.title("weather")
 window.iconbitmap("./img/icons/icons2/sunny.ico")
+# load all to memory, not the best practice
 resources.load_images(window)
 
 
